@@ -1,16 +1,10 @@
 # flutter_task
 
-A new Flutter project.
+https://github.com/mhossain11/Shop-cart/assets/56032040/2d15cb54-149d-46e7-903e-0be126289661
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+# Technology Used
+Dart
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Working Features
+getx, SQLite, Flutter.
