@@ -16,7 +16,6 @@ class _ProductsPageState extends State<ProductsPage> {
  final TextEditingController searchController = TextEditingController();
  final ProductController _productController = Get.find<ProductController>();
 
-
  @override
   void dispose() {
     super.dispose();
@@ -108,7 +107,7 @@ class _ProductsPageState extends State<ProductsPage> {
                                        child: IconButton(onPressed: (){
                                          ModelProduct model = ModelProduct(id: product.id,image:product.image.toString(),name:product.name.toString(),salePrice: double.parse(product.lowestUnit!.salePrice.toString()), quantity: 1);
                                          _productController.addToCart(product.id!,model);
-                                       }, icon: const Icon(Icons.shopping_bag_outlined)))
+                                       }, icon: const Icon(Icons.shopping_bag_outlined)))  //cardClick == true? const Icon(Icons.shopping_bag):
                                  ]
                              );
 

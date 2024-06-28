@@ -26,6 +26,7 @@ class ProductController extends GetxController{
   bool _inProgress = false;
   int quantity =1;
   double price=0.0;
+  bool addCard= false;
   String? _errorMessage;
   bool get inProgress => _inProgress;
   String? get errorMessage => _errorMessage;
@@ -71,6 +72,7 @@ class ProductController extends GetxController{
 
   addToCart(int id,ModelProduct items) async{
     var existingItem = cartList.firstWhereOrNull((item) => item.id == id);
+    addCard=true;
     if(existingItem != null){
       existingItem.quantity++;
       await dbHelper.updateItem(existingItem);
